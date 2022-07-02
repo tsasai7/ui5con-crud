@@ -1,0 +1,11 @@
+{
+    "serverlessConsole.services": [
+        {
+            "type": "dynamodb",
+            "title": "Transaction-dfbtqypf6fgkfh5vbjmqw7z2wm-dev",
+            "tableName": "Transaction-dfbtqypf6fgkfh5vbjmqw7z2wm-dev",
+            "awsProfile": "default",
+            "region": "sa-east-1"
+        }
+    ]
+}

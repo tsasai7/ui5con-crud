@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ui5concrud-dev-231636-authRole",
+      "UnauthRoleArn": "arn:aws:iam::550332710129:role/amplify-ui5concrud-dev-231636-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::550332710129:role/amplify-ui5concrud-dev-231636-authRole",
+      "Region": "sa-east-1",
+      "DeploymentBucketName": "amplify-ui5concrud-dev-231636-deployment",
+      "UnauthRoleName": "amplify-ui5concrud-dev-231636-unauthRole",
+      "StackName": "amplify-ui5concrud-dev-231636",
+      "StackId": "arn:aws:cloudformation:sa-east-1:550332710129:stack/amplify-ui5concrud-dev-231636/5aee9300-ed1a-11ec-a11f-06d2c9901ab2",
+      "AmplifyAppId": "d1v9pk1fyhs7ob"
+    },
+    "categories": {
+      "auth": {
+        "ui5concruda3535a85": {}
+      }
+    }
+  }
+}

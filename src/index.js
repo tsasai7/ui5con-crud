@@ -1,20 +1,26 @@
-import { ThemeProvider } from '@ui5/webcomponents-react';
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+import "./index.css";
 
-const container = document.getElementById('root');
+import "@ui5/webcomponents/dist/Assets";
+import "@ui5/webcomponents-fiori/dist/Assets";
+import "@ui5/webcomponents-react/dist/Assets";
+
+import { registerI18nLoader } from "@ui5/webcomponents-base/dist/asset-registries/i18n.js";
+import parse from "@ui5/webcomponents-base/dist/PropertiesFileFormat.js";
+
+const supportedLocales = ["en", "pt"];
+supportedLocales.forEach((localeToRegister) => {
+  registerI18nLoader("myApp", localeToRegister, async (localeId) => {
+    const props = await (
+      await fetch(`./i18n/i18n_${localeId}.properties`)
+    ).text();
+    return parse(props); // this call is required for parsing the properties text
+  });
+});
+
+const container = document.getElementById("root");
 const root = createRoot(container);
 
-root.render(
-  <ThemeProvider>
-    <App />
-  </ThemeProvider>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(<App />);

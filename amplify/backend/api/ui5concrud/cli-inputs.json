@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "ui5concrud",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "C:\\Sasai\\dev\\ui5con_dryrun\\ui5con-crud-final\\amplify\\backend\\api\\ui5concrud\\schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 7
+    }
+  }
+}
