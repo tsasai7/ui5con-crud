@@ -4,5 +4,5 @@ This project was created to demonstrate at UI5con 2022 the usage of UI5 Web Comp
 
 ## How to use the application
 
-I will add here soon a link to download UI5con material, with step-by-step to run the application locally using your own backend services.
-
+Download the material below that explain all steps to follow and run the application on our local machine using cloud resources backend of our account.
+https://openui5.org/ui5con/germany2022/slides/2022-UI5con-1_6-Thiago-Sasai.pdf
